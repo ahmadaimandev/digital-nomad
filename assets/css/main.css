@@ -1,16 +1,93 @@
-/* General Reset */
-
-
-/* navbar css start */
-
-/* navbar css end */
-
-/* Header css start */
-/* Header css end */
-
-/* About us css start */
-/* About us css end */
-
-/* What We Offer css start */
-/* What We Offer css end */
-
+/* General How It Works Section */
+.how-it-works {
+    padding: 60px 40px;
+    background-color: #f4f4f4;
+  }
+  
+  .center-heading-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .purple-gradient {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Grid container for steps */
+  .grid-container-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: start;
+  }
+  
+  /* Card Styles */
+  .sign-up-card, .setup-profile-card, .apply-job-card, .enjoy-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .card-img img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 1024px) {
+    .grid-container-steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .center-heading-title {
+      font-size: 1.8rem;
+    }
+  
+    .card-title {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .how-it-works {
+      padding: 40px 20px;
+    }
+  
+    .grid-container-steps {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-title {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .center-heading-title {
+      font-size: 1.6rem;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-img img {
+      max-width: 150px;
+    }
+  }
+  
