@@ -143,8 +143,9 @@ html.lenis body {
 
 
 
-/* General Styles for Our Services - Start*/
-.our-services-content {
+/* General Styles Our Services and How It's Work - Start*/
+.our-services-content,
+.how-it-works {
     padding: 60px 40px;
     background-color: #fff;
 }
@@ -166,7 +167,8 @@ html.lenis body {
 }
 
 /* Grid Layout */
-.grid-container {
+.grid-container-our-services,
+.grid-container-steps {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -175,7 +177,11 @@ html.lenis body {
 .grid-container-one,
 .grid-container-two,
 .grid-container-three,
-.grid-container-four {
+.grid-container-four,
+.grid-container-sign-up,
+.grid-container-setup-profile,
+.grid-container-apply-job,
+.grid-container-enjoy{
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 20px;
@@ -246,5 +252,5 @@ html.lenis body {
         font-size: 0.9rem;
     }
 }
-/* General Styles for Our Services - End*/
+/* General Styles for Our Services and How It's Work - End*/
 
