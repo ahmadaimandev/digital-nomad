@@ -145,7 +145,7 @@ html.lenis body {
 
 /* General Styles Our Services and How It's Work - Start*/
 .our-services-content,
-.how-it-works {
+.how-it-works-content {
     padding: 60px 40px;
     background-color: #fff;
 }
@@ -230,13 +230,15 @@ html.lenis body {
 
 /* Responsive Layout */
 @media screen and (max-width: 1024px) {
-    .grid-container {
+    .grid-container-our-services,
+    .grid-container-steps {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .grid-container {
+    .grid-container-our-services,
+    .grid-container-steps {
         grid-template-columns: 1fr;
     }
 
