@@ -3,6 +3,151 @@
     --desc-font: "Montserrat", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* General Styling */
+.our-services-content {
+    padding: 60px 40px;
+}
+
+.center-heading-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.purple-gradient {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Grid Layout for Services */
+.our-services-grid-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.grid-container-one,
+.grid-container-two,
+.grid-container-three,
+.grid-container-four {
+    text-align: center;
+}
+
+.remote-job-card,
+.co-working-space-finder-card,
+.digital-nomad-toolkit-card,
+.community-support-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.remote-job-card:hover,
+.co-working-space-finder-card:hover,
+.digital-nomad-toolkit-card:hover,
+.community-support-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-description p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+    font-family: var(--desc-font);
+    font-weight: 500;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.card-button .outline {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #6a11cb;
+    color: #6a11cb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    width: 200px;
+}
+
+.card-button .outline:hover {
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .our-services-grid-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .center-heading-title {
+        font-size: 1.8rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-img img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-services-content {
+        padding: 40px 20px;
+    }
+
+    .our-services-grid-content {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-img img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .center-heading-title {
+        font-size: 1.6rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-img img {
+        max-width: 100px;
+    }
+}
+
+
+
 /* General How It Works Section */
 .how-it-works-content {
     padding: 60px 40px;
@@ -97,5 +242,94 @@
 
     .card-img img {
         max-width: 150px;
+    }
+}
+
+
+
+
+/* Call to Action Section */
+.call-to-action-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.background-blue-purple-gradient {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 40px 20px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-heading-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.white-color {
+    color: #fff;
+    font-family: var(--desc-font);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button button:hover {
+    background-color: #fff;
+    color: #6a11cb;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .center-heading-title {
+        font-size: 1.8rem;
+    }
+
+    .button button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .center-heading-title {
+        font-size: 1.6rem;
+    }
+
+    .button button {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .call-to-action-content {
+        padding: 30px 15px;
+    }
+
+    .center-heading-title {
+        font-size: 1.4rem;
+    }
+
+    .button button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
     }
 }
