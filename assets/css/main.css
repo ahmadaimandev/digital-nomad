@@ -679,8 +679,6 @@ html {
     }
 }
 
-
-
 /* FAQ Section */
 .faq-question-content {
     padding: 40px 20px;
@@ -915,9 +913,10 @@ footer {
     text-align: left;
 }
 
-.company-logo h1 {
+.company-footer-logo h1 {
     font-size: 2rem;
     color: #fff;
+    font-family: var(--heading-font);
 }
 
 .purple-gradient {
