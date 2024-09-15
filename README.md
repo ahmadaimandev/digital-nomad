@@ -1,6 +1,6 @@
 # Guitarista Landing Page
 
-Welcome to the Guitarista Landing Page project! This project showcases a modern, responsive landing page for a guitar shop called Guitarista. The page includes various sections like Home, About Us, Products, Pricing, Clients, and Contact Us.
+Welcome to the Digital Nomad project! This project showcases a modern, responsive landing page for a remote job search called Digital Nomad. The page includes various sections like Home, About Us, How It's Work, Pricing, FAQS, and Contact Us.
 
 ![Guitarista Landing Page](./preview.png)
 
@@ -17,16 +17,17 @@ Welcome to the Guitarista Landing Page project! This project showcases a modern,
 
 ## Demo
 
-You can view the live demo of the Guitarista Landing Page [here](https://guitarista-landing-page.vercel.app/).
+You can view the live demo of the Guitarista Landing Page [here](https://digital-nomad-nu.vercel.app/).
 
 ## Features
 
 - **Responsive Design**: The page is fully responsive and works well on all devices.
 - **Home Section**: Includes a welcome message, description, and call-to-action buttons.
-- **About Us Section**: Features a video and a brief description of the company.
-- **Products Section**: Displays different types of guitars with descriptions and images.
+- **About Us Section**: Features a company members and a brief description of the company.
+- **What We Offer Section**: Displays different types of offers.
+- **How It's Work Section**: Give guidance how to be a members of Digital Nomad .
 - **Pricing Section**: Provides different pricing plans with features for each plan.
-- **Clients Section**: Showcases logos of prominent clients using a carousel.
+- **FAQS Section**: List of frequent question that were asked by visitor.
 - **Contact Us Section**: Includes a form for visitors to get in touch with the company.
 - **Footer**: Contains social media links and copyright information.
 
@@ -34,12 +35,12 @@ You can view the live demo of the Guitarista Landing Page [here](https://guitari
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/ahmadaimandev/Landing-Page.git
+    git clone https://github.com/ahmadaimandev/digital-nomad.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd guitarista-landing-page
+    cd digital-nomad
     ```
 
 3. Open the `index.html` file in your browser to view the landing page.
@@ -54,7 +55,10 @@ You can view the live demo of the Guitarista Landing Page [here](https://guitari
 
 - **HTML**: Structure of the web page.
 - **CSS**: Styling of the web page.
+- **JS**: Make the website more interactive.
+- **ChatGPT**: Guidance in website making process.
 - **Font Awesome**: Icons used throughout the page.
+- **Google Font**: Font used throughout the page.
 
 ## Contributing
 
@@ -81,7 +85,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me at [aimanzulbahari@gmail.com](mailto:aimanzulbahari@gmail.com).
+If you have any questions or suggestions, feel free to reach out to me at [my email](mailto:aimanzulbahari@gmail.com).
 
 ---
 
