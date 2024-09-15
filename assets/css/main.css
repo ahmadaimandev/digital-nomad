@@ -580,6 +580,124 @@ html {
     }
 }
 
+/* General Styling */
+.pricing-content {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.heading-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.purple-gradient {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Pricing Row */
+.pricing-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Pricing Card */
+.price-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.price-card-header {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pricing-header {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.dollar-sign {
+    font-size: 1.5rem;
+}
+
+.pricing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.pricing-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.pricing-list li i {
+    color: #6a11cb;
+    margin-right: 8px;
+}
+
+.pricing-button {
+    margin-top: 20px;
+}
+
+.outline-gradient {
+    background: none;
+    border: 2px solid #6a11cb;
+    border-radius: 4px;
+    color: #6a11cb;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.outline-gradient:hover {
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading-title {
+        font-size: 2rem;
+    }
+
+    .pricing-header {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-title {
+        font-size: 1.8rem;
+    }
+
+    .pricing-header {
+        font-size: 1.8rem;
+    }
+
+    .pricing-list li {
+        font-size: 0.9rem;
+    }
+}
 
 
 /* General How It Works Section */
