@@ -1,4 +1,4 @@
-# Guitarista Landing Page
+# Digital Nomad Landing Page
 
 Welcome to the Digital Nomad project! This project showcases a modern, responsive landing page for a remote job search called Digital Nomad. The page includes various sections like Home, About Us, How It's Work, Pricing, FAQS, and Contact Us.
 
