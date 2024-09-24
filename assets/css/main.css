@@ -3,9 +3,7 @@
     --desc-font: "Montserrat", sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 /* General Header Styling */
 .page-header {
