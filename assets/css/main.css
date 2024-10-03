@@ -578,194 +578,210 @@ html {
     }
 }
 
-/* General Styling */
+/* General styles */
 .pricing-content {
-    text-align: center;
-    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
 
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .heading-title {
     font-size: 2.5rem;
-    margin-bottom: 30px;
+    color: #333;
 }
 
 .purple-gradient {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Pricing Row */
+/* Pricing row and columns */
 .pricing-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-items: center;
+    justify-content: center;
 }
 
-/* Pricing Card */
-.price-card {
+.basic-column,
+.standard-column,
+.premium-column,
+.enterprise-column {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.price-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
+/* Pricing card header */
 .price-card-header {
     font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
     font-weight: bold;
-    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .pricing-header {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
     margin-bottom: 20px;
-    font-family: var(--desc-font);
+    color: #2575fc;
 }
 
 .dollar-sign {
     font-size: 1.5rem;
-    font-family: var(--heading-font);
+    vertical-align: super;
 }
 
+/* Pricing list */
 .pricing-list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin: 0 0 20px;
-    font-family: var(--desc-font);
+    margin-bottom: 20px;
+    flex-grow: 1;
 }
 
 .pricing-list li {
-    font-size: 1rem;
     margin-bottom: 10px;
-    color: #555;
+    display: flex;
+    align-items: center;
 }
 
-.pricing-list li i {
-    color: #6a11cb;
-    margin-right: 8px;
+.pricing-list i {
+    color: #2575fc;
+    margin-right: 10px;
 }
 
+/* Pricing button */
 .pricing-button {
-    margin-top: 20px;
-    font-family: var(--heading-font);
-    font-family: 500;
+    text-align: center;
+    margin-top: auto;
 }
 
 .outline-gradient {
-    background: none;
-    border: 2px solid #6a11cb;
-    border-radius: 4px;
-    color: #6a11cb;
+    background: #6a11cb;
+    border: none;
+    color: white;
     padding: 10px 20px;
-    cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .outline-gradient:hover {
-    background-color: #6a11cb;
-    color: #fff;
+    background: #2575fc;
 }
 
-/* Responsive Design */
+/* Responsive design */
+@media (max-width: 1024px) {
+    .pricing-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
-    .heading-title {
-        font-size: 2rem;
+    .pricing-row {
+        grid-template-columns: 1fr;
     }
 
-    .pricing-header {
+    .heading-title {
         font-size: 2rem;
     }
 }
 
-@media (max-width: 480px) {
-    .heading-title {
-        font-size: 1.8rem;
-    }
 
-    .pricing-header {
-        font-size: 1.8rem;
-    }
-
-    .pricing-list li {
-        font-size: 0.9rem;
-    }
-}
-
-
-/* General How It Works Section */
 .how-it-works-content {
-    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .center-heading-title {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2.5rem;
     color: #333;
-    margin-bottom: 40px;
-    font-family: var(--heading-font);
 }
 
 .purple-gradient {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Grid container for steps */
 .grid-container-steps {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    justify-items: center;
-    align-items: start;
+    gap: 40px;
 }
 
-/* Card Styles */
-.sign-up-card,
+.grid-container-setup-profile,
+.grid-container-apply-job {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
 .setup-profile-card,
-.apply-job-card,
-.enjoy-card {
+.apply-job-card {
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .card-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: #333;
-    font-family: var(--desc-font);
 }
 
 .card-img img {
     width: 100%;
     height: auto;
-    max-width: 180px;
-    margin-bottom: 15px;
+    border-radius: 8px;
+    
 }
 
-/* Responsive Media Queries */
-@media (max-width: 1024px) {
-    .grid-container-steps {
-        grid-template-columns: repeat(2, 1fr);
+/* Zig-zag layout */
+.grid-container-steps>div:nth-child(even) {
+    direction: rtl;
+}
+
+.grid-container-steps>div:nth-child(even) .setup-profile-card,
+.grid-container-steps>div:nth-child(even) .apply-job-card {
+    direction: ltr;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .center-heading-title {
+        font-size: 2rem;
     }
 
-    .center-heading-title {
-        font-size: 1.8rem;
+    .grid-container-setup-profile,
+    .grid-container-apply-job {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-steps>div:nth-child(even) {
+        direction: ltr;
     }
 
     .card-title {
@@ -773,31 +789,13 @@ html {
     }
 }
 
-@media (max-width: 768px) {
-    .how-it-works {
-        padding: 40px 20px;
-    }
-
-    .grid-container-steps {
-        grid-template-columns: 1fr;
-    }
-
-    .card-title {
-        font-size: 1.1rem;
-    }
-}
-
 @media (max-width: 480px) {
     .center-heading-title {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .card-title {
         font-size: 1rem;
-    }
-
-    .card-img img {
-        max-width: 150px;
     }
 }
 
