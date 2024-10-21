@@ -106,9 +106,9 @@ html {
 }
 
 .outline-button:hover {
-    background-color: #6a11cb;
+    background-color: #0099ff;
     color: #fff;
-    border-color: #6a11cb;
+    border-color: #0099ff;
     transition: 0.5s ease-in-out;
 }
 
