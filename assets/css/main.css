@@ -24,6 +24,11 @@ html {
     font-family: var(--heading-font);
 }
 
+.purple-gradient {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 /* Navbar Links */
 .nav-bar {
